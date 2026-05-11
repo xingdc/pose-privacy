@@ -1,30 +1,151 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Pose摄影助手 - 隐私政策</title>
-  <style>
-    body { max-width: 700px; margin: 40px auto; padding: 0 20px; font-family: -apple-system, sans-serif; line-height: 1.8; color: #333; }
-    h1 { text-align: center; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 | Pose摄影助手</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #1d1d1f; }
+  .meta {
+    color: #86868b; font-size: 14px; margin-bottom: 24px;
+    padding-bottom: 24px; border-bottom: 1px solid #e8e8ed;
+  }
+  .meta a { color: #0066cc; text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+
+  /* TOC */
+  .toc {
+    background: #f8f8fa; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px;
+  }
+  .toc-title { font-size: 14px; font-weight: 600; color: #6e6e73; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .toc a {
+    display: block; color: #0066cc; text-decoration: none; font-size: 15px;
+    padding: 4px 0; transition: color 0.15s;
+  }
+  .toc a:hover { color: #003d99; }
+  .toc a.sub { padding-left: 16px; font-size: 14px; }
+
+  h2 { font-size: 20px; font-weight: 600; margin: 36px 0 12px; color: #1d1d1f; }
+  h2:target { background: #fff8e0; margin: 36px -8px 12px; padding: 4px 8px; border-radius: 6px; }
+  h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; color: #1d1d1f; }
+  h3:target { background: #fff8e0; margin: 24px -8px 8px; padding: 4px 8px; border-radius: 6px; }
+  p { margin-bottom: 12px; color: #424245; font-size: 15px; }
+  strong { color: #1d1d1f; }
+  .divider { height: 1px; background: #e8e8ed; margin: 40px 0; }
+  .back-top {
+    display: block; text-align: center; color: #86868b;
+    font-size: 13px; text-decoration: none; margin-top: 36px; padding: 12px;
+    border-top: 1px solid #e8e8ed; transition: color 0.15s;
+  }
+  .back-top:hover { color: #0066cc; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #1c1c1e; color: #f5f5f7; }
+    .container { background: #2c2c2e; }
+    .toc { background: #3a3a3c; }
+    .toc-title { color: #aeaeb2; }
+    .toc a { color: #0a84ff; }
+    .toc a:hover { color: #66bbff; }
+    h1, h2, h3, strong { color: #f5f5f7; }
+    p { color: #aeaeb2; }
+    .meta { color: #8e8e93; border-bottom-color: #38383a; }
+    .meta a { color: #0a84ff; }
+    .divider, .back-top { border-color: #38383a; }
+    h2:target, h3:target { background: #3a3200; }
+    .back-top:hover { color: #0a84ff; }
+  }
+</style>
 </head>
 <body>
-  <h1>Pose摄影助手 隐私政策</h1>
-  <p>最后更新：2026年5月</p>
-  
-  <h2>我们收集什么信息</h2>
-  <p>本应用<strong>不收集</strong>任何个人信息。您的收藏数据仅存储在您的设备本地，不会上传到任何服务器。</p>
-  
-  <h2>数据存储</h2>
-  <p>收藏列表使用设备本地存储（AsyncStorage），完全离线。删除 App 后数据将一并清除。</p>
-  
-  <h2>第三方服务</h2>
-  <p>本应用不使用任何第三方分析、广告或追踪服务。</p>
-  
-  <h2>联系我们</h2>
-  <p>如有隐私相关问题，请联系：xingdachuan@outlook.com</p>
-  
-  <h2>政策更新</h2>
-  <p>本政策可能不定期更新。更新后会在 App 内通知。</p>
+<div class="container">
+
+<h1>隐私政策 | Pose摄影助手</h1>
+<p class="meta">
+  生效日期：2026年05月09日<br>
+  开发者联系邮箱：<a href="mailto:xingdachuan@outlook.com">xingdachuan@outlook.com</a><br>
+</p>
+
+<div class="toc">
+  <div class="toc-title">目录</div>
+  <a href="#zh">一、隐私政策声明（中文）</a>
+  <a href="#zh-1" class="sub">1. 信息收集</a>
+  <a href="#zh-2" class="sub">2. 本地数据存储</a>
+  <a href="#zh-3" class="sub">3. 网络使用说明</a>
+  <a href="#zh-4" class="sub">4. 第三方服务</a>
+  <a href="#zh-5" class="sub">5. 素材版权声明</a>
+  <a href="#zh-6" class="sub">6. 用户权利</a>
+  <a href="#en">二、Privacy Policy (English)</a>
+  <a href="#en-1" class="sub">1. Information Collection</a>
+  <a href="#en-2" class="sub">2. Local Data Storage</a>
+  <a href="#en-3" class="sub">3. Network Usage</a>
+  <a href="#en-4" class="sub">4. Third-Party Services</a>
+  <a href="#en-5" class="sub">5. Material Copyright Statement</a>
+  <a href="#en-6" class="sub">6. User Rights</a>
+</div>
+
+<h2 id="zh">一、隐私政策声明（中文）</h2>
+<p>Pose摄影助手（以下简称「本应用」）是一款纯离线拍照姿势参考工具，本隐私政策用于向用户清晰说明数据使用、隐私保护及版权相关规则。</p>
+
+<h3 id="zh-1">1. 信息收集</h3>
+<p>本应用<strong>不会收集、上传、共享任何用户个人信息</strong>。应用无相机、相册、定位、麦克风、通讯录、网络等敏感权限，全程不会获取用户任何私人数据。</p>
+
+<h3 id="zh-2">2. 本地数据存储</h3>
+<p>用户在应用内收藏的姿势数据，仅保存在用户手机本地设备中，不会上传至任何云端服务器。用户卸载本应用后，所有本地收藏数据将被永久清除，且无法恢复。</p>
+
+<h3 id="zh-3">3. 网络使用说明</h3>
+<p>本应用无需联网、无任何网络请求，全部姿势资源内置在安装包内，支持全程离线使用，不会产生任何网络流量消耗。</p>
+
+<h3 id="zh-4">4. 第三方服务</h3>
+<p>本应用未接入任何第三方SDK、广告插件、数据统计工具，不存在任何第三方数据收集、推送、广告展示行为。</p>
+
+<h3 id="zh-5">5. 素材版权声明</h3>
+<p>本应用内所有姿势插画均为开发者原创AI绘制素材，无真人出镜、无网络盗用图片、无第三方版权内容，完全规避肖像权与版权侵权风险，仅作个人日常参考使用。</p>
+
+<h3 id="zh-6">6. 用户权利</h3>
+<p>用户可随时自由删除、卸载本应用，设备内不会留存任何个人使用痕迹。若对产品有疑问、反馈或功能建议，可通过开发者邮箱进行沟通。</p>
+
+<div class="divider"></div>
+
+<h2 id="en">二、Privacy Policy (English)</h2>
+<p>Pose Photography Assistant (hereinafter referred to as "the App") is a pure offline photography pose reference tool. This privacy policy clearly explains data usage, privacy protection and copyright rules for users.</p>
+
+<h3 id="en-1">1. Information Collection</h3>
+<p>The App <strong>does not collect, upload, or share any personal user data</strong>. The App does not access sensitive permissions such as camera, photo library, location, microphone, contacts and network. No private user data will be obtained.</p>
+
+<h3 id="en-2">2. Local Data Storage</h3>
+<p>The pose data collected by users is only stored locally on the user's mobile device and will not be uploaded to any cloud server. After uninstalling the App, all local collected data will be permanently deleted and cannot be recovered.</p>
+
+<h3 id="en-3">3. Network Usage</h3>
+<p>The App works completely offline with no network requests. All pose resources are built into the installation package without traffic consumption.</p>
+
+<h3 id="en-4">4. Third-Party Services</h3>
+<p>This App does not integrate any third-party SDKs, advertising plugins or data analysis tools. There is no third-party data collection, push or advertisement display behavior.</p>
+
+<h3 id="en-5">5. Material Copyright Statement</h3>
+<p>All illustrations in the App are original AI-drawn materials by the developer. There are no real human portraits and no copyrighted images from the Internet. All materials avoid portrait rights and copyright infringement risks, only for personal daily reference.</p>
+
+<h3 id="en-6">6. User Rights</h3>
+<p>Users may delete or uninstall the App at any time without leaving any usage traces. If you have any questions or suggestions, please contact the developer via email.</p>
+
+<a class="back-top" href="#">↑ 返回顶部</a>
+
+</div>
 </body>
 </html>
